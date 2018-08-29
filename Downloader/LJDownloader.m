@@ -85,7 +85,7 @@
         NSString *fileName = name;
         if (classArray.count > 1) {
             fileClass = [@"." stringByAppendingString:[classArray lastObject]];
-            fileName = [name substringToIndex:name.length - fileClass.length - 1];
+            fileName = [name substringToIndex:name.length - fileClass.length];
         }
         NSArray *array = [fileName componentsSeparatedByString:@"_"];
         if (array.count > 1 && [[array lastObject] intValue]>0) {
