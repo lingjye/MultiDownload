@@ -40,8 +40,7 @@
 }
 
 - (void)downloadAction {
-    NSString *urlString = @"https://api.txooo.com/api/Market/goods/DownloadGoodsExcel?userid=235500&token=75556E4353357642786D2F6E485444464874316673413D3D&brandid=2";
-//    NSString *urlString = @"http://wind4app-bdys.oss-cn-hangzhou.aliyuncs.com/CMD_MarkDown.zip";
+    NSString *urlString = @"http://wind4app-bdys.oss-cn-hangzhou.aliyuncs.com/CMD_MarkDown.zip";
     BSDownloadSessionModel *model = [[BSDownloadSessionModel alloc] init];
     model.fileName = @"下载文件名称";
     model.task = [LJDownloader downloadURL:urlString fileName:^(NSString *fileName) {
